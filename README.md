@@ -2,16 +2,30 @@
 
 A developer productivity dashboard featuring an interactive Pomodoro focus engine with circular SVG telemetry, Web Audio procedural ambient soundscapes, a drag-and-drop Kanban board, and a 30-day commit habit heatmap.
 
-[![Live on Vercel](https://img.shields.io/badge/Live_Demo-Vercel-00F5D4?style=for-the-badge&logo=vercel&logoColor=black)](https://dev-flow-zen.vercel.app)
-[![GitHub Profile](https://img.shields.io/badge/Developed_by-Khushi-7928CA?style=for-the-badge&logo=github&logoColor=white)](https://github.com/khushi2008hc-lab)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Khushi.dev-6366F1?style=for-the-badge)](https://portfolio-nine-alpha-m0jhu0c4o1.vercel.app)
+<p align="center">
+  <a href="https://dev-flow-zen.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/⚡_Live_Demo-Launch_DevFlow-00F5D4?style=for-the-badge&logo=vercel&logoColor=black" alt="Live Demo on Vercel" />
+  </a>
+  <a href="https://portfolio-nine-alpha-m0jhu0c4o1.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-Khushi.dev-7928CA?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
+  </a>
+  <a href="https://github.com/khushi2008hc-lab/dev-flow-zen" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo" />
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-00F5D4?style=for-the-badge" alt="License: MIT" />
+  </a>
+</p>
 
 ---
 
-## 🚀 Live Demo & Deployment
+## 🚀 Live Deployed Links
 
-- **Live Deployment on Vercel:** [https://dev-flow-zen.vercel.app](https://dev-flow-zen.vercel.app)
-- **Source Code Repository:** [https://github.com/khushi2008hc-lab/dev-flow-zen](https://github.com/khushi2008hc-lab/dev-flow-zen)
+| Platform | Live Link | Status |
+| :--- | :--- | :--- |
+| **▲ Vercel Production** | [dev-flow-zen.vercel.app](https://dev-flow-zen.vercel.app) | 🟢 Live & Active |
+| **📁 Source Code** | [github.com/khushi2008hc-lab/dev-flow-zen](https://github.com/khushi2008hc-lab/dev-flow-zen) | 🟢 Public Repository |
+| **🌐 Developer Portfolio** | [portfolio-nine-alpha-m0jhu0c4o1.vercel.app](https://portfolio-nine-alpha-m0jhu0c4o1.vercel.app) | 🟢 Live & Active |
 
 ---
 
