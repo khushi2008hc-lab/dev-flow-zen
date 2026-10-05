@@ -2,8 +2,16 @@
 
 A developer productivity dashboard featuring an interactive Pomodoro focus engine with circular SVG telemetry, Web Audio procedural ambient soundscapes, a drag-and-drop Kanban board, and a 30-day commit habit heatmap.
 
-[![GitHub Profile](https://img.shields.io/badge/Developed_by-Khushi-00F5D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/khushi2008hc-lab)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Khushi.dev-7928CA?style=for-the-badge)](https://portfolio-nine-alpha-m0jhu0c4o1.vercel.app)
+[![Live on Vercel](https://img.shields.io/badge/Live_Demo-Vercel-00F5D4?style=for-the-badge&logo=vercel&logoColor=black)](https://dev-flow-zen.vercel.app)
+[![GitHub Profile](https://img.shields.io/badge/Developed_by-Khushi-7928CA?style=for-the-badge&logo=github&logoColor=white)](https://github.com/khushi2008hc-lab)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Khushi.dev-6366F1?style=for-the-badge)](https://portfolio-nine-alpha-m0jhu0c4o1.vercel.app)
+
+---
+
+## 🚀 Live Demo & Deployment
+
+- **Live Deployment on Vercel:** [https://dev-flow-zen.vercel.app](https://dev-flow-zen.vercel.app)
+- **Source Code Repository:** [https://github.com/khushi2008hc-lab/dev-flow-zen](https://github.com/khushi2008hc-lab/dev-flow-zen)
 
 ---
 
