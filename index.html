@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevFlow Zen | Developer Productivity Dashboard & Ambient Matrix by Khushi</title>
+  <meta name="description" content="All-in-one developer productivity operating system, ambient focus audio generator, and kanban board engineered by Khushi.">
+  <meta name="author" content="Khushi">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="zen-layout">
+    <!-- Top Bar -->
+    <header class="zen-nav">
+      <div class="nav-brand">
+        <i class="fa-solid fa-brain text-accent"></i>
+        <span>DevFlow<strong class="text-pink">Zen</strong></span>
+        <span class="badge-tag">v2.0</span>
+      </div>
+
+      <!-- Live Clock & Status -->
+      <div class="clock-display">
+        <span id="live-time" class="time-text">00:00:00</span>
+        <span class="focus-status"><i class="fa-solid fa-shield-halved text-accent"></i> Deep Work Protocol Active</span>
+      </div>
+
+      <div class="nav-right">
+        <a href="https://portfolio-nine-alpha-m0jhu0c4o1.vercel.app" target="_blank" class="author-pill">
+          <i class="fa-solid fa-code"></i> By Khushi
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Workspace Grid -->
+    <main class="zen-grid">
+      <!-- Left Column: Pomodoro & Ambient Soundscapes -->
+      <section class="zen-card focus-card">
+        <h2 class="card-header"><i class="fa-solid fa-stopwatch text-accent"></i> Pomodoro Focus Engine</h2>
+
+        <div class="timer-display-box">
+          <svg class="progress-ring" width="220" height="220">
+            <circle class="progress-ring-bg" stroke="rgba(255,255,255,0.06)" stroke-width="8" fill="transparent" r="95" cx="110" cy="110"/>
+            <circle id="timer-progress" class="progress-ring-circle" stroke="#00f5d4" stroke-width="8" stroke-dasharray="596.9" stroke-dashoffset="0" fill="transparent" r="95" cx="110" cy="110"/>
+          </svg>
+          <div class="timer-center-content">
+            <span id="timer-display" class="timer-numbers">25:00</span>
+            <span id="timer-mode-label" class="timer-mode">FOCUS SESSION</span>
+          </div>
+        </div>
+
+        <div class="timer-actions">
+          <button id="timer-toggle-btn" class="btn btn-primary"><i class="fa-solid fa-play"></i> Start Focus</button>
+          <button id="timer-reset-btn" class="btn btn-secondary"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+        </div>
+
+        <!-- Ambient Noise Synthesizer -->
+        <div class="ambient-mixer">
+          <h3 class="mixer-title"><i class="fa-solid fa-sliders text-pink"></i> Ambient Soundscapes (Web Audio)</h3>
+          <div class="sound-channels">
+            <div class="channel-row">
+              <span><i class="fa-solid fa-cloud-rain text-cyan"></i> Cyber Rain</span>
+              <input type="range" class="vol-slider" data-sound="rain" min="0" max="1" step="0.05" value="0">
+            </div>
+            <div class="channel-row">
+              <span><i class="fa-solid fa-mug-hot text-yellow"></i> Cafe Ambience</span>
+              <input type="range" class="vol-slider" data-sound="cafe" min="0" max="1" step="0.05" value="0">
+            </div>
+            <div class="channel-row">
+              <span><i class="fa-solid fa-wave-square text-purple"></i> Alpha 432Hz</span>
+              <input type="range" class="vol-slider" data-sound="alpha" min="0" max="1" step="0.05" value="0">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Center Column: Kanban Sprint Board -->
+      <section class="zen-card kanban-card">
+        <div class="kanban-header">
+          <h2 class="card-header"><i class="fa-solid fa-list-check text-pink"></i> Active Sprint Matrix</h2>
+          <button id="add-task-btn" class="btn btn-sm btn-secondary"><i class="fa-solid fa-plus"></i> New Task</button>
+        </div>
+
+        <div class="kanban-columns">
+          <!-- Backlog -->
+          <div class="k-column" data-status="backlog">
+            <div class="k-col-title"><span>Backlog</span> <span class="k-count" id="count-backlog">0</span></div>
+            <div class="k-dropzone" id="col-backlog"></div>
+          </div>
+
+          <!-- In Progress -->
+          <div class="k-column" data-status="progress">
+            <div class="k-col-title"><span>In Flight</span> <span class="k-count" id="count-progress">0</span></div>
+            <div class="k-dropzone" id="col-progress"></div>
+          </div>
+
+          <!-- Shipped -->
+          <div class="k-column" data-status="done">
+            <div class="k-col-title"><span>Shipped</span> <span class="k-count" id="count-done">0</span></div>
+            <div class="k-dropzone" id="col-done"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Column: Code Scratchpad & Activity Matrix -->
+      <section class="zen-card scratchpad-card">
+        <h2 class="card-header"><i class="fa-solid fa-code text-cyan"></i> Quick Scratchpad &amp; Notes</h2>
+        <textarea id="scratchpad-text" class="zen-textarea" placeholder="Paste snippets, regex tests, or architecture thoughts... Saved automatically."></textarea>
+
+        <div class="habit-heatmap-box">
+          <h3 class="heatmap-title"><i class="fa-solid fa-calendar-check text-accent"></i> 30-Day Focus Heatmap</h3>
+          <div class="heatmap-grid" id="heatmap-grid"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
